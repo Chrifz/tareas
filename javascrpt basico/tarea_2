@@ -1,0 +1,13 @@
+var nombre = "Christian";
+var edad = 32;
+var desarrollador = false;
+
+const fecha = new Date("November 25, 1989")
+console.log(fecha)
+
+const libro = {
+    titulo: "siddhartha",
+    Autor: "Herman Hesse",
+    fecha: 1922,
+    url: "https://www.gutenberg.org/files/2500/2500-h/2500-h.htm"
+}
