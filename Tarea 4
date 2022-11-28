@@ -1,0 +1,12 @@
+// ----------- Tarea 4 ----------------
+
+let nombre_1 = "Christian";
+let lastName = "Fonseca";
+let estudiante = `   ${nombre_1} ${lastName}   `;
+let estudianteMayus = estudiante.toUpperCase();
+let estudianteMinus = estudiante.toLowerCase();
+let caracteresNum = estudiante.length;
+let firstChar = estudiante.slice(3, 4);
+let lastChar = estudiante.slice(19, 20);
+let justStudent = estudiante.trimStart();
+let verification = estudiante.includes("Christian");
