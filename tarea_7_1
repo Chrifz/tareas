@@ -1,0 +1,7 @@
+const familyMembers = ["Diana", "Alberto", "Julio", "Carlos"]
+const family = new Set(familyMembers)
+
+family.add("Chris")
+family.add("Javascript")
+
+console.log(family)
