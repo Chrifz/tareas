@@ -1,0 +1,29 @@
+let listaCompras = ["queso", "huevo", "leche", "naranjas", "pan"]
+
+listaCompras.push("aceite de jirasol")
+
+listaCompras.pop()
+
+const listaPeliculas = [
+    { titulo: "El padrino", director: "Francis Ford Copola" , fecha: 1972},
+    { titulo: "Star Wars", director: "George Lucas", fecha: 1977},
+    { titulo: "Eterno resplandor de una mente sin recuerdos", director: "Michel Gondry", fecha: 2004}
+]
+
+const peliculasDespues10 = listaPeliculas.filter(obj => {
+    if (obj.fecha > 2010) {
+        return true
+    } else {
+        return false
+    }
+});
+
+const listaDirectores = listaPeliculas.map(listaPeliculas => `${listaPeliculas.director}`);
+
+const listatitulos = listaPeliculas.map(listaPeliculas => `${listaPeliculas.titulo}`);
+
+let nuevaLista = listatitulos.concat(listaDirectores);
+
+let nuevaLista_2 = [...listaDirectores, ...listatitulos]
+
+console.log(nuevaLista)
