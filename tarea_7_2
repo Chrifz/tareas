@@ -1,0 +1,29 @@
+
+const chris = {
+    nombre: "Christian",
+    apellido: "Salgado",
+    edad: "25",
+    altura: "1.70",
+    eresDesarrollador: true
+};
+
+var edad = chris.edad
+
+console.log(edad)
+
+function Amigo(nombre, apellido, edad, altura, eresDesarrollador) {
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.edad = edad;
+    this.altura = altura;
+    this.eresDesarrollador = eresDesarrollador;
+}
+
+const luis = new Amigo("Luis", "Valdez", "28", "1.90", true)
+const jorge = new Amigo("Jorge", "Aleman", "24", "1.68", false)
+
+const people = [chris, luis, jorge]
+
+people.sort((a, b) => b.edad - a.edad)
+
+console.log(people)
